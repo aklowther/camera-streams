@@ -12,6 +12,12 @@ jobs:
 
     steps:
       - checkout
+    - run:
+        name: get TVVLCKit
+        command: curl https://external.lowther.me/adam/tvvlc.tgz >> tvvlc.tgz
+    - run:
+        name: unzip TVVLCKit
+        command: tar xvzf tvvlc.tgz
 
     #Build
     - run:
