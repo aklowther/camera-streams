@@ -1,6 +1,6 @@
 # camera-streams
 
-[![Twitter: @AdamLowther](https://img.shields.io/badge/contact-@FastlaneTools-blue.svg?style=flat)](https://twitter.com/FastlaneTools)
+[![Twitter: @AdamLowther](https://img.shields.io/badge/contact-@AdamLowther-blue.svg?style=flat)](https://twitter.com/AdamLowther)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/fastlane/fastlane/blob/master/LICENSE)
 [![Build Status](https://img.shields.io/circleci/project/aklowther/camera-streams.svg?style=flat)](https://circleci.com/gh/aklowther/camera-streams)
 
