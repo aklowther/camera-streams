@@ -5,24 +5,20 @@
 version: 2
 jobs:
   build:
-
     # Specify the Xcode version to use
     macos:
-      xcode: "9.2"
+      xcode: "9.2.0"
 
     steps:
       - checkout
-    - run:
-        name: get TVVLCKit
-        command: curl https://external.lowther.me/adam/tvvlc.tgz >> tvvlc.tgz
-    - run:
-        name: unzip TVVLCKit
-        command: tar xvzf tvvlc.tgz
+      # - run:
+      #     name: get TVVLCKit
+      #     command: curl https://external.lowther.me/adam/tvvlc.tgz >> tvvlc.tgz
+      # - run:
+      #     name: unzip TVVLCKit
+      #     command: tar xvzf tvvlc.tgz
 
-    #Build
-    - run:
-        name: Build Project
-        command: fastlane gym
-        environment:
-            GYM_PROJECT: 'Camera Streams'
-            GYM_SKIP_ARCHIVE: true
+      #Build
+      - run:
+          name: Run Tests
+          command: fastlane ios circle_test

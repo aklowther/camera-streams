@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E467398B206B9B070022C61E /* Camera_StreamsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E467398A206B9B070022C61E /* Camera_StreamsTests.m */; };
 		E4CEC8032060920300AD7B23 /* TVVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CEC8022060920300AD7B23 /* TVVLCKit.framework */; };
 		E4CEC8072060923100AD7B23 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CEC8052060922500AD7B23 /* AVFoundation.framework */; };
 		E4CEC80D2060931100AD7B23 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CEC80C2060931100AD7B23 /* libc++.tbd */; };
@@ -20,7 +21,20 @@
 		E4F036592043979600AB2037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F036582043979600AB2037 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E467398D206B9B070022C61E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4F036462043979600AB2037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4F0364D2043979600AB2037;
+			remoteInfo = "Camera Streams";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E4673988206B9B070022C61E /* Camera StreamsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Camera StreamsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E467398A206B9B070022C61E /* Camera_StreamsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camera_StreamsTests.m; sourceTree = "<group>"; };
+		E467398C206B9B070022C61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4CEC8022060920300AD7B23 /* TVVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVVLCKit.framework; path = ../TVVLCKit.framework; sourceTree = "<group>"; };
 		E4CEC8052060922500AD7B23 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E4CEC8062060922A00AD7B23 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -43,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E4673985206B9B070022C61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4F0364B2043979600AB2037 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4673989206B9B070022C61E /* Camera StreamsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E467398A206B9B070022C61E /* Camera_StreamsTests.m */,
+				E467398C206B9B070022C61E /* Info.plist */,
+			);
+			path = "Camera StreamsTests";
+			sourceTree = "<group>";
+		};
 		E4CEC8042060922500AD7B23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				E4F036502043979600AB2037 /* Camera Streams */,
+				E4673989206B9B070022C61E /* Camera StreamsTests */,
 				E4F0364F2043979600AB2037 /* Products */,
 				E4CEC8042060922500AD7B23 /* Frameworks */,
 			);
@@ -91,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				E4F0364E2043979600AB2037 /* Camera Streams.app */,
+				E4673988206B9B070022C61E /* Camera StreamsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +144,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E4673987206B9B070022C61E /* Camera StreamsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4673991206B9B070022C61E /* Build configuration list for PBXNativeTarget "Camera StreamsTests" */;
+			buildPhases = (
+				E4673984206B9B070022C61E /* Sources */,
+				E4673985206B9B070022C61E /* Frameworks */,
+				E4673986206B9B070022C61E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E467398E206B9B070022C61E /* PBXTargetDependency */,
+			);
+			name = "Camera StreamsTests";
+			productName = "Camera StreamsTests";
+			productReference = E4673988206B9B070022C61E /* Camera StreamsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E4F0364D2043979600AB2037 /* Camera Streams */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4F0365D2043979600AB2037 /* Build configuration list for PBXNativeTarget "Camera Streams" */;
@@ -139,6 +189,11 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Lowther;
 				TargetAttributes = {
+					E4673987206B9B070022C61E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E4F0364D2043979600AB2037;
+					};
 					E4F0364D2043979600AB2037 = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
@@ -160,11 +215,19 @@
 			projectRoot = "";
 			targets = (
 				E4F0364D2043979600AB2037 /* Camera Streams */,
+				E4673987206B9B070022C61E /* Camera StreamsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E4673986206B9B070022C61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4F0364C2043979600AB2037 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +240,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E4673984206B9B070022C61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E467398B206B9B070022C61E /* Camera_StreamsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4F0364A2043979600AB2037 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +258,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E467398E206B9B070022C61E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4F0364D2043979600AB2037 /* Camera Streams */;
+			targetProxy = E467398D206B9B070022C61E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E4F036552043979600AB2037 /* Main.storyboard */ = {
@@ -200,6 +279,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E467398F206B9B070022C61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E5ANWKSXGH;
+				INFOPLIST_FILE = "Camera StreamsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.lowther.Camera-StreamsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Camera Streams.app/Camera Streams";
+			};
+			name = Debug;
+		};
+		E4673990206B9B070022C61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E5ANWKSXGH;
+				INFOPLIST_FILE = "Camera StreamsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.lowther.Camera-StreamsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Camera Streams.app/Camera Streams";
+			};
+			name = Release;
+		};
 		E4F0365B2043979600AB2037 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -373,6 +484,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E4673991206B9B070022C61E /* Build configuration list for PBXNativeTarget "Camera StreamsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E467398F206B9B070022C61E /* Debug */,
+				E4673990206B9B070022C61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E4F036492043979600AB2037 /* Build configuration list for PBXProject "Camera Streams" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
