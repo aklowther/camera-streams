@@ -166,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4F0365D2043979600AB2037 /* Build configuration list for PBXNativeTarget "Camera Streams" */;
 			buildPhases = (
+				E4FEC322207659F8006E0DDB /* ShellScript */,
 				E4F0364A2043979600AB2037 /* Sources */,
 				E4F0364B2043979600AB2037 /* Frameworks */,
 				E4F0364C2043979600AB2037 /* Resources */,
@@ -238,6 +239,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4FEC322207659F8006E0DDB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $PROJECT_DIR/download_tvvlckit;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4673984206B9B070022C61E /* Sources */ = {
