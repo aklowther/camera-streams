@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [ ! -e "${PWD}"/TVVLCKit.framework ]; then
+    curl --silent -O https://external.lowther.me/adam/tvvlc.tgz
+    tar xvzf tvvlc.tgz
+fi
